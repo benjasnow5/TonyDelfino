@@ -1,0 +1,471 @@
+@charset "utf-8";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+/* 
+========= NAV ========== 
+*/
+
+.navbar-collapse li a:hover{
+	color: #EF2249 !important;
+}
+
+.nav-fondo {
+	background-color: #ACF001;
+}
+
+/* 
+========= TERMINA NAV ========== 
+*/
+
+
+body{
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+
+.hovercontenedor:hover .overlay {
+  opacity: 70%;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    filter: blur;
+	background-color: #A0A0A0;
+}
+
+.hovercontenedor{
+	position: relative;
+	justify-content: center !important;
+}
+
+.text {
+  color: chartreuse;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+/* 
+========= MAIN ========== 
+*/
+
+#compra-finalizada{
+	background-color: #4c90cd;	
+}
+
+#section-menu{
+	height: 1080px !important;
+	width: auto !important;
+}
+
+#titular-h3{
+	margin-top: 50px; 
+	color: #FFFFFF;
+}
+
+#titulo-main h3{
+	text-align: center !important;
+	font-size: 34px !important;
+	margin:20px 0px; 
+}
+
+#galeria-productos{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.img-fluid{
+	text-align: center !important;
+	justify-content: center !important;
+}
+
+#subtitulo-h3{
+	margin-top: -5px;
+	text-align: center; 
+}
+
+.producto-galeria{
+	width: 100% !important;
+	height: 100% !important;
+}
+
+
+.description-producto{
+    background-color: #F6F6F6;
+    width: auto;
+	height: 160px;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+}
+
+.contendor-info{
+	text-align: center;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.addshop {
+	text-align: center;
+	font-size: 45px;
+	float: left;
+}
+
+.texdescription-box{
+	font-size: 20px;
+	text-align: center;
+	line-height: 20px;
+}
+
+.descriptionprecio{
+	margin-top: -9px;
+}
+
+.favoritedescription-box{
+	text-align: center;
+	font-size: 45px;
+}
+
+.favoritedescription-box i{
+	color: #000000;
+}
+
+.favoritedescription-box i:hover{
+	color: crimson !important;
+}
+
+.addshop i{
+	color: #000000;
+}
+
+.addshop i:hover{
+	color: crimson !important;
+}
+
+/* 
+========= TERMINA MAIN ========== 
+*/
+
+
+/* 
+========= FOOTER ========== 
+*/
+
+#footer ul a li{
+	color: #FFFFFF !important;
+}
+#footer {
+	background-color: #231F20;
+}
+.payment-methods{
+	padding: 5px !important;
+}
+
+.payment-methods li {
+	display: inline-block !important;
+}
+/* 
+========= TERMINA FOOTER ========== 
+*/
+
+
+/* 
+========= MEDIA QUERIES PANTALLAS CHICAS ========== 
+*/
+@media (max-width:769px){
+	
+	.navbar{
+		text-align: center;
+		
+	}
+	
+	.navbar-brand{
+		width: 50%;
+		height: 50%;
+	}
+	
+	#carouselExampleCaptions{
+		
+		align-content: center !important;
+		text-align: center !important;
+		width: 100% !important;
+		margin-right: 12px !important;
+		margin-left: 12px !important;
+	}
+	#imagenes-principales{
+		width: 100% !important;
+		margin: 0px !important;
+		padding: 0px !important;
+	}
+	
+	.overlay{
+		justify-content: center !important;
+	}
+	
+	#galeria-productos{
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	.img-fluid{
+		text-align: center !important;
+		justify-content: center !important;
+	}
+
+	.producto-galeria{
+		width: 100% !important;
+		height: 100% !important;
+	}
+	
+}
+
+
+
+/* 
+========= TERMINA QUERIES PANTALLAS CHICAS ========== 
+*/
+
+/* 
+========= QUERIES PANTALLAS MEDIANAS ========== 
+*/
+
+@media (min-width: 768px){ 
+	
+	.addshop {
+		justify-content: center;
+		text-align: center;
+		font-size: 35px;
+		margin-bottom: 5px;
+		display: block;
+	}
+
+	.texdescription-box{
+		justify-content: center;
+		font-size: 19px;
+		text-align: center;
+		display: block;
+		line-height: 17px;
+	}
+
+	.descriptionprecio{
+		margin-top: -9px;
+	}
+	.descriptiontitulo{
+		text-align: center;
+		justify-content: center;
+	}
+
+	.favoritedescription-box{
+		justify-content: center;
+		text-align: center;
+		display: block;
+		font-size: 35px;
+	}
+	
+	.description-producto{
+		justify-content: center;
+    	background-color: #F6F6F6;
+    	width: auto;
+		height: 245px;
+    	text-align: center;
+	}
+
+	.contendor-info{
+		margin-top: -2px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		text-align: center;
+		margin-left: 35px;
+		display: inline-block;
+		justify-content: center;
+	}
+	
+} 
+
+/* 
+========= QUERIES PANTALLAS MEDIANAS ========== 
+*/
+
+
+@media (min-width: 992px){
+	
+	#titulo-main h3{
+	text-align: center !important;
+	font-size: 34px !important;
+	margin:20px 0px; 
+	}
+
+	#galeria-productos{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+	.img-fluid{
+	text-align: center !important;
+	justify-content: center !important;
+	}
+
+	.producto-galeria{
+	width: 100% !important;
+	height: 100% !important;
+	}
+
+
+	.description-producto{
+    background-color: #F6F6F6;
+    width: auto;
+	height: 285px;
+    text-align: center;
+    padding: 5px;
+	}
+
+	.contendor-info{
+	text-align: center;
+	justify-content: center;
+	margin-left: 60px;
+	margin-top: -5px;
+	
+	}
+
+	.addshop {
+	text-align: center;
+	font-size: 45px;
+	float: left;
+	}
+
+	.texdescription-box{
+	font-size: 20px;
+	text-align: center;
+	line-height: 20px;
+	}
+
+	.descriptionprecio{
+	margin-top: -9px;
+	}
+
+	.favoritedescription-box{
+	text-align: center;
+	font-size: 45px;
+	}
+
+	.favoritedescription-box i{
+	color: #000000;
+	}
+
+	.favoritedescription-box i:hover{
+	color: crimson !important;
+	}
+
+	.addshop i{
+	color: #000000;
+	}
+
+	.addshop i:hover{
+	color: crimson !important;
+	}
+}
+
+@media (min-width: 1200px){
+	
+	#titulo-main h3{
+	text-align: center !important;
+	font-size: 34px !important;
+	margin:20px 0px; 
+}
+
+#galeria-productos{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.img-fluid{
+	text-align: center !important;
+	justify-content: center !important;
+}
+
+.producto-galeria{
+	width: 100% !important;
+	height: 100% !important;
+}
+
+
+.description-producto{
+    background-color: #F6F6F6;
+    width: auto;
+	height: 160px;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+}
+
+.contendor-info{
+	text-align: center;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	margin-left: -10px;
+	
+}
+
+.addshop {
+	text-align: center;
+	font-size: 45px;
+	float: left;
+}
+
+.texdescription-box{
+	font-size: 20px;
+	text-align: center;
+	line-height: 20px;
+}
+
+.descriptionprecio{
+	margin-top: -9px;
+}
+
+.favoritedescription-box{
+	text-align: center;
+	font-size: 45px;
+}
+
+.favoritedescription-box i{
+	color: #000000;
+}
+
+.favoritedescription-box i:hover{
+	color: crimson !important;
+}
+
+.addshop i{
+	color: #000000;
+}
+
+.addshop i:hover{
+	color: crimson !important;
+}
+}
